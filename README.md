@@ -46,7 +46,7 @@
 
    Sehingga kami dapat memasukan jawaban dan mendapatkan flag.
 
-   ![Gambar 7](/images/mirzoflag.png)
+   ![Gambar 7](/images/mirzaflag.png)
 
 5. *whoami*
    
@@ -60,4 +60,4 @@
 
    Didapatkan pesan rahasia yang berhasil di decode yaitu `Hello my name is Paul Atreides`. Sehingga kami mendapatkan jawaban dan flag.
 
-   ![Gambar 10](images/whoamiflag/png)
+   ![Gambar 10](images/whoamiflag.png)

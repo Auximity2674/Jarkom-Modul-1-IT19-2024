@@ -8,4 +8,7 @@
 
 ## Write Up
 
-1. Creds
+1. *Creds*
+   Pada soal ini kami diharuskan untuk menemukan kredensial dari server FTP yang dibuat oleh attacker. Disini kami menggunakan tools Wireshark.
+   ![Gambar 1](/images/image9.png)
+   Pertama kami membuka attachment yang diberikan berupa file evidence.pcap dan melakukan pencarian dengan kata kunci FTP melalui `display filter`.

@@ -1,4 +1,4 @@
-# Praktikum Jarkom Modul 1 Kelompok IT19
+![mirza](https://github.com/Auximity2674/Jarkom-Modul-1-IT19-2024/assets/129935728/b06b24ce-a9aa-427c-b7b9-bddbda5b66bb)![mirza](https://github.com/Auximity2674/Jarkom-Modul-1-IT19-2024/assets/129935728/cd12b392-48c6-435c-acb2-1ea3745e55e6)# Praktikum Jarkom Modul 1 Kelompok IT19
 
 ## Anggota kelompok
 | Nama | NRP |
@@ -33,4 +33,24 @@
 
    ![Gambar 5](/images/malwleoflag.png)
 
-3. 
+3. *secret*
+   Masih dengan attachment yang sama dengan soal sebelumnya, kali ini kami diminta untuk menemukan pesan rahasia dari attacker. Disini kami mencoba membuka salah satu file yang berhasil kami transfer dari attacker yaitu `mirza.jpg`, kemudian didapatkan pesan rahasia sebagai berikut:
+
+   ![Gambar 6](/images/mirza.jpg)
+
+   Sehingga kami dapat memasukan jawaban dan mendapatkan flag.
+
+   ![Gambar 7](/images/mirzoflag.png)
+
+4. *whoami*
+   Kembali dengan attachment yang sama, kali ini kami diminta untuk menemukan siapa identitas attacker. Kami melihat ke dalam file `m4L1c10us_W4re.c` dan mendapatkan pesan comment yang di-enkripsi.
+
+   ![Gambar 8](/images/mencurigakan.png)
+
+   Kami memasukan pesan yang ter-enkripsi tersebut ke salah satu tools yang digunakan untuk dianalisa jenis enkripsi dan melakukan decode. Kami menggunakan website `www.decode.fr` dan mendapatkan hasil sebagai berikut:
+
+   ![Gambar 9](/images/dekrip.png)
+
+   Didapatkan pesan rahasia yang berhasil di decode yaitu `Hello my name is Paul Atreides`. Sehingga kami mendapatkan jawaban dan flag.
+
+   ![Gambar 10](images/whoamiflag/png)

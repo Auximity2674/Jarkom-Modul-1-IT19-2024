@@ -9,6 +9,7 @@
 ## Write Up
 
 1. *Creds*
+   
    Pada soal ini kami diharuskan untuk menemukan kredensial dari server FTP yang dibuat oleh attacker. Disini kami menggunakan tools Wireshark.
    
    ![Gambar 1](/images/image9.png)
@@ -25,6 +26,7 @@
    ![Gambar 3](/images/credsflag.png)
 
 2. *malwleowleo*
+   
    Dengan attachment yang sama dengan soal sebelumnya, kami diminta untuk menemukan file malware yang dikirim oleh attacker melalui FTP. Disini kami menggunakan tools filezilla client untuk masuk dengan kredensial attacker dan melakukan transfer file yang dikirim oleh attacker ke laptop kami.
 
    ![Gambar 4](/images/image11.png)
@@ -34,6 +36,7 @@
    ![Gambar 5](/images/malwleoflag.png)
 
 3. *secret*
+   
    Masih dengan attachment yang sama dengan soal sebelumnya, kali ini kami diminta untuk menemukan pesan rahasia dari attacker. Disini kami mencoba membuka salah satu file yang berhasil kami transfer dari attacker yaitu `mirza.jpg`, kemudian didapatkan pesan rahasia sebagai berikut:
 
    ![Gambar 6](/images/mirza.jpg)
@@ -43,6 +46,7 @@
    ![Gambar 7](/images/mirzoflag.png)
 
 4. *whoami*
+   
    Kembali dengan attachment yang sama, kali ini kami diminta untuk menemukan siapa identitas attacker. Kami melihat ke dalam file `m4L1c10us_W4re.c` dan mendapatkan pesan comment yang di-enkripsi.
 
    ![Gambar 8](/images/mencurigakan.png)

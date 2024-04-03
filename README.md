@@ -61,3 +61,21 @@
    Didapatkan pesan rahasia yang berhasil di decode yaitu `Hello my name is Paul Atreides`. Sehingga kami mendapatkan jawaban dan flag.
 
    ![Gambar 10](images/whoamiflag.png)
+
+6. *ATM or ATP or FTP?🤔*
+
+   Sekarang kami diminta untuk menganalisis sebuah server FTP dimana telah terjadi suatu bruteforce login oleh seorang attacker. Kami diberikan sebuah file attachment berupa ftp.pcap lalu kita lakukan display filter FTP server. Kemudian kami mencari stream dimana attacker berhasil login.
+
+   ![Gambar 11](/images/image13.png)
+
+   Didapatkan kredensial login yang digunakan attacker:
+
+   User: `adminJarkom`
+   Pass: `m4y_th3_Kn!fe_ch1p_&_sh4tter`
+
+   Sehingga dapat menjawab pertanyaan dan mendapatkan flag.
+
+   ![Gambar 12](/images/ftpflag.png)
+
+7. *How Many packets?*
+

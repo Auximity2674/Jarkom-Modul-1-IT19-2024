@@ -9,6 +9,7 @@
 ## Write Up
 
 1. *Creds*
+   
    Pada soal ini kami diharuskan untuk menemukan kredensial dari server FTP yang dibuat oleh attacker. Disini kami menggunakan tools Wireshark.
    
    ![Gambar 1](/images/image9.png)
@@ -18,13 +19,17 @@
    ![Gambar 2](/images/creds2.png)
    
    Sehingga telah didapatkan kredensial dari server FTP yang dibuat oleh attacker:
+   
    Username: `h3ngk3rTzy`
+   
    Password: `S!l3ncE`
+   
    Kemudian kita memasukan jawaban melalui terminal dengan `ncat 10.15.40.20 10007` untuk mendapatkan flag.
 
    ![Gambar 3](/images/credsflag.png)
 
-2. *malwleowleo*
+3. *malwleowleo*
+   
    Dengan attachment yang sama dengan soal sebelumnya, kami diminta untuk menemukan file malware yang dikirim oleh attacker melalui FTP. Disini kami menggunakan tools filezilla client untuk masuk dengan kredensial attacker dan melakukan transfer file yang dikirim oleh attacker ke laptop kami.
 
    ![Gambar 4](/images/image11.png)
@@ -33,4 +38,26 @@
 
    ![Gambar 5](/images/malwleoflag.png)
 
-3. 
+4. *secret*
+   
+   Masih dengan attachment yang sama dengan soal sebelumnya, kali ini kami diminta untuk menemukan pesan rahasia dari attacker. Disini kami mencoba membuka salah satu file yang berhasil kami transfer dari attacker yaitu `mirza.jpg`, kemudian didapatkan pesan rahasia sebagai berikut:
+
+   ![Gambar 6](/images/mirza.jpg)
+
+   Sehingga kami dapat memasukan jawaban dan mendapatkan flag.
+
+   ![Gambar 7](/images/mirzaflag.png)
+
+5. *whoami*
+   
+   Kembali dengan attachment yang sama, kali ini kami diminta untuk menemukan siapa identitas attacker. Kami melihat ke dalam file `m4L1c10us_W4re.c` dan mendapatkan pesan comment yang di-enkripsi.
+
+   ![Gambar 8](/images/mencurigakan.png)
+
+   Kami memasukan pesan yang ter-enkripsi tersebut ke salah satu tools yang digunakan untuk dianalisa jenis enkripsi dan melakukan decode. Kami menggunakan website `www.decode.fr` dan mendapatkan hasil sebagai berikut:
+
+   ![Gambar 9](/images/dekrip.png)
+
+   Didapatkan pesan rahasia yang berhasil di decode yaitu `Hello my name is Paul Atreides`. Sehingga kami mendapatkan jawaban dan flag.
+
+   ![Gambar 10](images/whoamiflag.png)

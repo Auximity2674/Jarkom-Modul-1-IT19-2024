@@ -28,7 +28,7 @@
 
    ![Gambar 3](/images/credsflag.png)
 
-3. *malwleowleo*
+2. *malwleowleo*
    
    Dengan attachment yang sama dengan soal sebelumnya, kami diminta untuk menemukan file malware yang dikirim oleh attacker melalui FTP. Disini kami menggunakan tools filezilla client untuk masuk dengan kredensial attacker dan melakukan transfer file yang dikirim oleh attacker ke laptop kami.
 
@@ -38,7 +38,7 @@
 
    ![Gambar 5](/images/malwleoflag.png)
 
-4. *secret*
+3. *secret*
    
    Masih dengan attachment yang sama dengan soal sebelumnya, kali ini kami diminta untuk menemukan pesan rahasia dari attacker. Disini kami mencoba membuka salah satu file yang berhasil kami transfer dari attacker yaitu `mirza.jpg`, kemudian didapatkan pesan rahasia sebagai berikut:
 
@@ -48,7 +48,7 @@
 
    ![Gambar 7](/images/mirzaflag.png)
 
-5. *whoami*
+4. *whoami*
    
    Kembali dengan attachment yang sama, kali ini kami diminta untuk menemukan siapa identitas attacker. Kami melihat ke dalam file `m4L1c10us_W4re.c` dan mendapatkan pesan comment yang di-enkripsi.
 
@@ -62,7 +62,7 @@
 
    ![Gambar 10](images/whoamiflag.png)
 
-6. *ATM or ATP or FTP?🤔*
+5. *ATM or ATP or FTP?🤔*
 
    Sekarang kami diminta untuk menganalisis sebuah server FTP dimana telah terjadi suatu bruteforce login oleh seorang attacker. Kami diberikan sebuah file attachment berupa ftp.pcap lalu kita lakukan display filter FTP server. Kemudian kami mencari stream dimana attacker berhasil login.
 
@@ -77,5 +77,31 @@
 
    ![Gambar 12](/images/ftpflag.png)
 
-7. *How Many packets?*
+6. *How Many packets?*
 
+   Masih dengan attachment yang sama dengan soal sebelumnya, kali ini kita diminta untuk menghitung berapa kali attacker melakukan percobaan bruteforce untuk login. Disini kami menggunakan cara manual yaitu menghitung masing-masing stream dan berapa kali percobaan dalam tiap stream tersebut. Kami menemukan pola sebagai berikut:
+
+   ![Gambar 13](/images/image12.png)
+   <center>Pada stream 1-304 terjadi 3 kali percobaan login</center>
+
+   ![Gambar 14](/images/image3.png)
+   <center>Pada stream 305-311 terjadi 2 kali percobaan login</center>
+
+   ![Gambar 14](/images/image2.png)
+   <center>Pada stream 312-319 terjadi 1 kali percobaan login</center>
+
+   Sehingga didapatkan total percobaan bruteforce login yaitu sebanyak 934 kali. Setelah memasukan jawaban yang benar kami berhasil mendapatkan flag.
+
+   ![Gambar 14](/images/image4.png)
+
+7. *Trace him*
+
+   Kembali dengan attachment yang sama, kali ini kami diminta untuk mencari IP sang attacker. Kami kembali menganalisa packet dimana attacker berhasil login. Pada kolom destination terdapat IP dimana packet terkirim.
+
+   ![Gambar 15](/images/ipattack.png)
+
+   Didapatkan IP attacker yaitu `10.30.3.4` sehingga kami dapat memasukan jawaban tersebut dan mendapatkan flag.
+   
+   ![Gambar 15](/images/ipattack.png)
+
+8. *Evidence*

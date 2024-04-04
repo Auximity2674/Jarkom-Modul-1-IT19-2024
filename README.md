@@ -19,10 +19,10 @@
    ![Gambar 2](/images/creds2.png)
    
    Sehingga telah didapatkan kredensial dari server FTP yang dibuat oleh attacker:
-   
-   Username: `h3ngk3rTzy`
-   
-   Password: `S!l3ncE`
+
+   | Username | Password |
+   |------|-----|
+   | `h3ngk3rTzy` | `S!l3ncE` |
    
    Kemudian kita memasukan jawaban melalui terminal dengan `ncat 10.15.40.20 10007` untuk mendapatkan flag.
 
@@ -70,8 +70,9 @@
 
    Didapatkan kredensial login yang digunakan attacker:
 
-   User: `adminJarkom`
-   Pass: `m4y_th3_Kn!fe_ch1p_&_sh4tter`
+   | Username | Password |
+   |------|-----|
+   | `adminJarkom` | `m4y_th3_Kn!fe_ch1p_&_sh4tter` |
 
    Sehingga dapat menjawab pertanyaan dan mendapatkan flag.
 
@@ -105,3 +106,27 @@
    ![Gambar 15](/images/ipattack.png)
 
 ### 8. *Evidence*
+
+   Pada soal ini kami diminta untuk mendapatkan informasi tentang bagaimana si attacker bisa masuk / login ke website perusahaan nanomate sebagai user biasa. Informasi yang diperlukan meliputi apa email dan password yang digunakan attacker.
+
+   ![Gambar 15](/images/evidence1.png)
+
+   Disini kami menggunakan cara manual lagi yaitu mencari satu-satu masing-masing stream yang terkait dengan email dan password tersebut.
+
+   ![Gambar 15](/images/evidence2.png)
+
+   Setelah beberapa kali percobaan, akhirnya telah didapatkan email dan password yang digunakan attacker untuk login sebagai user.
+
+   | Username | Password |
+   |------|------|
+   | `tareq@gmail.com` | `tareq@nanomate` |
+
+   Dan juga mendapatkan informasi tentang domain milik korban, web-server korban, dan endpoint yang digunakan untuk login sebagai user biasa. Yaitu, antara lain:
+
+   | Domain | Web-Server | Endpoint |
+   |------|------|------|
+   | `nanomate-solutions.com` | `Apache-2.4.56` | `/app/includes/process_login.php` |
+
+   Kemudian tinggal memasukan jawaban melalui terminal dengan `ncat 10.15.40.20 10002` untuk mendapatkan flag
+
+   ![Gambar 15](/images/evidence3.png)

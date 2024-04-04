@@ -111,7 +111,7 @@
 
    ![Gambar 15](/images/evidence1.png)
 
-   Disini kami menggunakan cara manual lagi yaitu mencari satu-satu masing-masing stream yang terkait dengan email dan password tersebut.
+   Untuk mencari kredensialnya, kami menggunakan filter `frame contains "login successful"`, lalu melakukan follow pada stream dimana attacker berhasil login.
 
    ![Gambar 15](/images/evidence2.png)
 
@@ -127,6 +127,6 @@
    |------|------|------|
    | `nanomate-solutions.com` | `Apache-2.4.56` | `/app/includes/process_login.php` |
 
-   Kemudian tinggal memasukan jawaban melalui terminal dengan `ncat 10.15.40.20 10002` untuk mendapatkan flag
+   Kemudian tinggal memasukan jawaban melalui terminal dengan `ncat 10.15.40.20 10002` untuk mendapatkan flag.
 
    ![Gambar 15](/images/evidence3.png)
